@@ -39,7 +39,7 @@ async def prepare_to_get_first(call: types.CallbackQuery, loop=event_loop):
 @dp.message_handler(content_types=['text'], state=Machine_State.Q1)
 async def first_mode(message: types.Message, state: FSMContext, loop=event_loop):
     cur = Current_Weather(message.text)
-    answer = cur.get_weather()
+    answer = await cur.get_weather()
     if type(answer) == str:
         await message.answer(answer, reply=False)
     else:

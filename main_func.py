@@ -4,7 +4,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 import os
 import asyncio
 
-API_TOKEN = "1160086050:AAF54-FHpGmoqoQI5MnQipruax7vm_uenI0"
+API_TOKEN = os.environ.get('API_TOKEN')
 
 logging.basicConfig(level=logging.DEBUG)
 
