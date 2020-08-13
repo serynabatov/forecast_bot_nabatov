@@ -19,3 +19,6 @@ https://www.loom.com/share/b0c2b3506da24179988aa209a852dc9c
 Полученный ответ используется как ответ пользователю
 
 Запускается с помощью main_func.py. Данные считываются с переменных окружения API_TOKEN и API_KEY.
+В Dockerfile и requirements.txt представлены команды для разворачивания (конкретно этот бот был развернут на AWS)
+
+Доступ @ForecastNabatov_bot
